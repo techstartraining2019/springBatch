@@ -1,0 +1,9 @@
+package com.example.demo;
+
+public class Employee {
+	
+	private Integer id;
+	private String firstName;
+	private String lastName;
+
+}

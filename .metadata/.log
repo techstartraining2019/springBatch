@@ -1,0 +1,595 @@
+!SESSION 2019-08-16 18:22:40.521 -----------------------------------------------
+eclipse.buildId=4.1.0.201812201400-RELEASE
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2019-08-16 18:23:17.919
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-08-16 18:23:17.919
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7a522157,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@706c062e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-08-16 18:23:17.919
+!MESSAGE A conflict occurred for CTRL+SHIFT+V:
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.command.OpenFromClipboard,Open from Clipboard,
+		Opens a Java element or a Java stack trace from clipboard,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5feff876,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.edit.paste.special,Advanced Paste,
+		Paste with extra settings,
+		Category(org.jkiss.dbeaver.core.util,Utility,Utility Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10ec4721,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-08-16 18:23:17.919
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7bdf94f2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.navigator.set.active,Set active,
+		Set object active ,
+		Category(org.jkiss.dbeaver.core.navigator,Database Navigator,Database Navigator Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b92a0d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-16 18:23:23.440
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\chtho'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.resources 4 2 2019-08-16 18:24:13.549
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.registry.ProjectMetadata.removeResourceFromCache(ProjectMetadata.java:396)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:560)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.access$7(BaseWorkspaceImpl.java:552)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl$ProjectListener.resourceChanged(BaseWorkspaceImpl.java:542)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:30.359
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:30.360
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@27311c99[org.springframework.tooling.boot.ls:1.2.0.201812201040(id=531)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:30.362
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:30.408
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.836
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.UDEXjjEs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.837
+!MESSAGE subscribing to classpath changes: sts4.classpath.UDEXjjEs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.838
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.840
+!MESSAGE subsribers = [sts4.classpath.UDEXjjEs]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.840
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.843
+!MESSAGE project demo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.844
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.845
+!MESSAGE Preparing classpath changed notification demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.845
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.UDEXjjEs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.846
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.859
+!MESSAGE classpath=74 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:33.859
+!MESSAGE executing callback sts4.classpath.UDEXjjEs demo false 74
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:24:34.237
+!MESSAGE executing callback sts4.classpath.UDEXjjEs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:25:47.431
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.UDEXjjEs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:25:47.432
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.UDEXjjEs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:25:47.432
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:25:47.433
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.UDEXjjEs => OK
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-08-16 18:31:36.854
+!MESSAGE java.util.concurrent.CancellationException
+!STACK 0
+java.util.concurrent.ExecutionException: java.util.concurrent.CancellationException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:593)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$8(LanguageServiceAccessor.java:372)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1553)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getMatchingStartedWrappers(LanguageServiceAccessor.java:374)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:284)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant$1.run(ConnectDocumentToLanguageServerSetupParticipant.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.CancellationException
+	at java.util.concurrent.CompletableFuture.cancel(CompletableFuture.java:2263)
+	at org.eclipse.lsp4e.LanguageServerWrapper.stop(LanguageServerWrapper.java:352)
+	at org.eclipse.lsp4e.LanguageServerWrapper.disconnect(LanguageServerWrapper.java:508)
+	at org.eclipse.lsp4e.LanguageServerWrapper$1.bufferDisposed(LanguageServerWrapper.java:125)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$12.run(TextFileBufferManager.java:789)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireBufferDisposed(TextFileBufferManager.java:786)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.disconnect(TextFileBufferManager.java:206)
+	at org.eclipse.jdt.internal.ui.javaeditor.DocumentAdapter.close(DocumentAdapter.java:382)
+	at org.eclipse.jdt.internal.core.Openable.closeBuffer(Openable.java:94)
+	at org.eclipse.jdt.internal.core.Openable.closing(Openable.java:103)
+	at org.eclipse.jdt.internal.core.CompilationUnit.closing(CompilationUnit.java:255)
+	at org.eclipse.jdt.internal.core.JavaModelManager.removeInfoAndChildren(JavaModelManager.java:4265)
+	at org.eclipse.jdt.internal.core.JavaModelManager.discardPerWorkingCopyInfo(JavaModelManager.java:2022)
+	at org.eclipse.jdt.internal.core.DiscardWorkingCopyOperation.executeOperation(DiscardWorkingCopyOperation.java:38)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.discardWorkingCopy(CompilationUnit.java:513)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage.createType(NewTypeWizardPage.java:2276)
+	at org.eclipse.jdt.internal.ui.wizards.NewClassCreationWizard.finishPage(NewClassCreationWizard.java:68)
+	at org.eclipse.jdt.internal.ui.wizards.NewElementWizard$2.run(NewElementWizard.java:123)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:41)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5810)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.373
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IanMrBQH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.374
+!MESSAGE subscribing to classpath changes: sts4.classpath.IanMrBQH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.374
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.375
+!MESSAGE subsribers = [sts4.classpath.IanMrBQH]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.375
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.376
+!MESSAGE project demo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.376
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.377
+!MESSAGE Preparing classpath changed notification demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.377
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IanMrBQH => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.378
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.384
+!MESSAGE classpath=75 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.385
+!MESSAGE executing callback sts4.classpath.IanMrBQH demo false 75
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:31:44.634
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-08-16 18:36:09.392
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:347)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:05.882
+!MESSAGE Preparing classpath changed notification demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:05.883
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:05.883
+!MESSAGE executing callback sts4.classpath.IanMrBQH demo true 0
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2019-08-16 18:52:05.888
+!MESSAGE Project 'demo' not found in navigator
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:05.895
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:05.896
+!MESSAGE Preparing classpath changed notification sb_javaconfig
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:05.896
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:05.899
+!MESSAGE classpath=23 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:05.900
+!MESSAGE executing callback sts4.classpath.IanMrBQH sb_javaconfig false 23
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:05.905
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:07.364
+!MESSAGE Preparing classpath changed notification sb_javaconfig
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:07.365
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:07.372
+!MESSAGE classpath=75 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:07.373
+!MESSAGE executing callback sts4.classpath.IanMrBQH sb_javaconfig false 75
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 18:52:07.385
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:13.137
+!MESSAGE Preparing classpath changed notification SB_JavaConfig
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:13.138
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2019-08-16 19:01:13.140
+!MESSAGE Project 'sb_javaconfig' not found in navigator
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:13.142
+!MESSAGE classpath=23 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:13.142
+!MESSAGE executing callback sts4.classpath.IanMrBQH SB_JavaConfig false 23
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:13.146
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:13.147
+!MESSAGE Preparing classpath changed notification sb_javaconfig
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:13.147
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:13.148
+!MESSAGE executing callback sts4.classpath.IanMrBQH sb_javaconfig true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:13.150
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:14.698
+!MESSAGE Preparing classpath changed notification SB_JavaConfig
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:14.699
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:14.710
+!MESSAGE classpath=75 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:14.711
+!MESSAGE executing callback sts4.classpath.IanMrBQH SB_JavaConfig false 75
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:14.741
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.eclipse.core.resources 4 2 2019-08-16 19:01:17.219
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.registry.ProjectMetadata.removeResourceFromCache(ProjectMetadata.java:396)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:560)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.access$7(BaseWorkspaceImpl.java:552)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl$ProjectListener.resourceChanged(BaseWorkspaceImpl.java:542)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:56.393
+!MESSAGE Preparing classpath changed notification SB_EventListener
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:56.394
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:56.395
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:56.395
+!MESSAGE executing callback sts4.classpath.IanMrBQH SB_EventListener false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:58.398
+!MESSAGE executing callback sts4.classpath.IanMrBQH FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-08-16 19:01:58.399
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:58.400
+!MESSAGE Preparing classpath changed notification SB_EventListener
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:58.401
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:58.412
+!MESSAGE classpath=74 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:58.413
+!MESSAGE executing callback sts4.classpath.IanMrBQH SB_EventListener false 74
+
+!ENTRY org.eclipse.core.resources 4 2 2019-08-16 19:01:59.137
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.registry.ProjectMetadata.removeResourceFromCache(ProjectMetadata.java:396)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:560)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.access$7(BaseWorkspaceImpl.java:552)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl$ProjectListener.resourceChanged(BaseWorkspaceImpl.java:542)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:466)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:352)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1370)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:349)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:335)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:317)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:306)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy.createEclipseProjectFromExistingMavenProject(MavenStrategy.java:138)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy$MavenCodeSetImport.run(MavenStrategy.java:84)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.importProject(NewSpringBootWizardModel.java:351)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:330)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard$1.run(NewSpringBootWizard.java:228)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:01:59.182
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:06:29.132
+!MESSAGE Preparing classpath changed notification SB_ItemProcessor
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:06:29.133
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:06:29.134
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:06:29.135
+!MESSAGE executing callback sts4.classpath.IanMrBQH SB_ItemProcessor false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:06:29.150
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:06:29.270
+!MESSAGE Preparing classpath changed notification SB_ItemProcessor
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:06:29.270
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:06:29.276
+!MESSAGE classpath=74 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:06:29.276
+!MESSAGE executing callback sts4.classpath.IanMrBQH SB_ItemProcessor false 74
+
+!ENTRY org.eclipse.core.resources 4 2 2019-08-16 19:06:29.995
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.registry.ProjectMetadata.removeResourceFromCache(ProjectMetadata.java:396)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:560)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.access$7(BaseWorkspaceImpl.java:552)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl$ProjectListener.resourceChanged(BaseWorkspaceImpl.java:542)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:466)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:352)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1370)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:349)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:335)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:317)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:306)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy.createEclipseProjectFromExistingMavenProject(MavenStrategy.java:138)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy$MavenCodeSetImport.run(MavenStrategy.java:84)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.importProject(NewSpringBootWizardModel.java:351)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:330)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard$1.run(NewSpringBootWizard.java:228)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:06:30.013
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:31:49.959
+!MESSAGE Preparing classpath changed notification sprbatch
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:31:49.960
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:31:49.964
+!MESSAGE classpath=21 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:31:49.965
+!MESSAGE executing callback sts4.classpath.IanMrBQH sprbatch false 21
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:31:49.981
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:32:08.753
+!MESSAGE Preparing classpath changed notification sprbatch
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:32:08.754
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:32:08.769
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:32:08.770
+!MESSAGE executing callback sts4.classpath.IanMrBQH sprbatch false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-16 19:32:08.943
+!MESSAGE executing callback sts4.classpath.IanMrBQH SUCCESS [done]
+
+!ENTRY org.eclipse.core.resources 4 2 2019-08-16 19:33:01.676
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.registry.ProjectMetadata.removeResourceFromCache(ProjectMetadata.java:396)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:560)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.access$7(BaseWorkspaceImpl.java:552)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl$ProjectListener.resourceChanged(BaseWorkspaceImpl.java:542)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.checkpoint(Workspace.java:565)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:265)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.core.resources 4 2 2019-08-16 19:33:02.236
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.registry.ProjectMetadata.removeResourceFromCache(ProjectMetadata.java:396)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:560)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.handleResourceChange(BaseWorkspaceImpl.java:564)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl.access$7(BaseWorkspaceImpl.java:552)
+	at org.jkiss.dbeaver.registry.BaseWorkspaceImpl$ProjectListener.resourceChanged(BaseWorkspaceImpl.java:542)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:169)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
