@@ -1,0 +1,27 @@
+Spring batch : Assemble a job rather than configuring it (Extensible job configuration)
+
+https://livebook.manning.com/book/spring-batch-in-action/chapter-8/168
+
+https://livebook.manning.com/book/spring-batch-in-action/chapter-5/189
+
+https://livebook.manning.com/book/spring-batch-in-action/chapter-1/
+
+https://github.com/michaelhoffmantech/patient-batch-loader/blob/master/DEMOS.md#demo-2-gradle-dependencies
+
+https://examples.javacodegeeks.com/enterprise-java/spring/batch/spring-batch-job-parameters-example/
+
+https://dzone.com/articles/spring-batch-tutorial-spring
+
+https://github.com/DouglasGo8/definitive-guide-spring-batch-
+
+https://github.com/st-spring-samples/spring-batch-unit-testing
+
+https://gist.githubusercontent.com/cataphract/131635de24e21b1f905e/raw/fde9f82c0ebd72182c9268f8df56a0ba51f56005/writerClassFromParams.groovy
+
+
+
+https://github.com/codecentric/spring-batch-javaconfig/tree/master/src/main/java/de/codecentric/batch/configuration
+
+https://github.com/HugoJBello/java-projects-tutorials/blob/master/spring-batch-passing-parameters/src/main/java/com/batch/steps/NoOpItemReaderStep3.java
+
+

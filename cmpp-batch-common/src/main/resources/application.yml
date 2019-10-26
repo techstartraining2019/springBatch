@@ -1,0 +1,6 @@
+INPUT:
+  FILENAME: "partner-import.csv"
+  FILEPATH: "C:/Projects/springBatchCommom/cmpp-batch-common/src/main/resources/"
+OUTPUT:
+  FILENAME: 
+  FILEPATH:
